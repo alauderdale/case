@@ -37,6 +37,8 @@
 # Helpers
 ###
 
+
+
 def nav_active(page)
   @page_id == page ? {:class => "Active"} : {}
 end
@@ -60,6 +62,8 @@ activate :livereload
 
 # Build-specific configuration
 configure :build do
+
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -80,3 +84,7 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+
+
+

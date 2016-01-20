@@ -26,3 +26,9 @@ run lambda { |env|
     File.open("tmp/404/index.html", File::RDONLY)
   ]
 }
+
+
+
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['admin', 'admin']
+end
