@@ -4,6 +4,14 @@ require "rack"
 require "middleman/rack"
 require "rack/contrib/try_static"
 
+
+protected_middleman = Rack::Auth::Basic.new(Middleman.server) do |username, password|
+  [username, password] == ['user', 'user']
+end
+
+run protected_middleman
+
+
 # Build the static site when the app boots
 `bundle exec middleman build`
 
@@ -28,7 +36,3 @@ run lambda { |env|
 }
 
 
-
-use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['admin', 'admin']
-end
