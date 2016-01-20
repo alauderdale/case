@@ -9,6 +9,5 @@ gem "middleman-bourbon"
 gem "middleman-livereload"
 gem "json"
 gem "sass"
-gem "middleman-gibberish"
 
 gem "rack-contrib"
