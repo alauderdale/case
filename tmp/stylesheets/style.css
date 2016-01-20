@@ -488,6 +488,26 @@ ol.baseol {
   ol.baseol.darkol li:before {
     color: black; }
 
+/* line 2, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_links_buttons.scss */
+.btn.btn-info {
+  font-family: "open_sanssemibold", Helvetica, Arial, sans-serif;
+  color: #FB4E56;
+  background: transparent;
+  border: 1px solid #fda7ab;
+  padding: 20px 40px;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+  /* line 9, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_links_buttons.scss */
+  .btn.btn-info:hover {
+    border-color: #FB4E56; }
+  /* line 12, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_links_buttons.scss */
+  .btn.btn-info:active {
+    color: white;
+    background: #FB4E56; }
+
 /* line 2, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-auto {
   margin: 0 auto; }
@@ -740,8 +760,22 @@ section {
   /* line 24, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_sections.scss */
   section.blast-off {
     background: white url(../images/blast_off_bg.png) repeat-x center -100px; }
+  /* line 29, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_sections.scss */
+  section.home-header-section {
+    background-color: #0063B5;
+    padding: 56px 0 224px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    @media (max-width: 767px) {
+      /* line 29, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_sections.scss */
+      section.home-header-section {
+        padding-top: 0;
+        padding-bottom: 140px; } }
 
-/* line 29, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_sections.scss */
+/* line 40, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_sections.scss */
 .parallax {
   min-height: 500px;
   background: transparent; }
@@ -841,7 +875,24 @@ label {
       #video-container video {
         top: 50px; } }
 
-/* line 1, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+/* line 5, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+.intro p {
+  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+  line-height: 3.7rem;
+  margin-bottom: 14px;
+  font-size: 1.9rem; }
+  @media (max-width: 767px) {
+    /* line 5, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    .intro p {
+      font-size: 1.6rem;
+      line-height: 2.8rem; } }
+  /* line 14, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  .intro p.signature {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-family: "open_sanslight", Helvetica, Arial, sans-serif; }
+
+/* line 35, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
 .brand-doc {
   background: #0063B5 url(../images/Confidential.png) no-repeat center 200px;
   display: inline-block;
@@ -849,19 +900,19 @@ label {
   margin: 56px 0 0 0;
   box-shadow: 0px 2px 84px 0px rgba(0, 0, 0, 0.27); }
   @media (max-width: 767px) {
-    /* line 1, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    /* line 35, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
     .brand-doc {
       padding: 28px 28px; } }
-  /* line 11, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  /* line 45, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
   .brand-doc hr {
     border-color: rgba(255, 255, 255, 0.5); }
-  /* line 14, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  /* line 48, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
   .brand-doc p, .brand-doc li {
     font-family: "open_sansregular", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     line-height: 2.5rem;
     color: rgba(255, 255, 255, 0.9) !important; }
-    /* line 20, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    /* line 54, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
     .brand-doc p a, .brand-doc li a {
       color: white;
       font-size: 1.5rem;
@@ -879,7 +930,7 @@ label {
       -webkit-hyphens: auto;
       hyphens: auto;
       border-bottom-color: white !important; }
-  /* line 41, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  /* line 75, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
   .brand-doc h5 {
     font-family: "open_sansbold", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
@@ -888,14 +939,14 @@ label {
     text-transform: none;
     letter-spacing: 0; }
 
-/* line 52, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+/* line 86, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
 img.do-not {
   position: relative;
   top: -238px;
   right: 20px;
   margin-bottom: -138px; }
   @media (max-width: 992px) {
-    /* line 52, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    /* line 86, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
     img.do-not {
       top: -168px;
       width: 200px; } }
@@ -950,3 +1001,156 @@ img.do-not {
   margin-bottom: -499px;
   z-index: -999;
   overflow-x: hidden; }
+
+/* line 1, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; }
+
+/* line 9, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+#loader {
+  z-index: 1001;
+  /* anything higher than z-index: 1000 of .loader-section */
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 3px solid #3498db;
+  z-index: 1500;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+  /* line 26, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+  #loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #e74c3c;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite; }
+  /* line 42, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+  #loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid #f9c922;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite; }
+
+/* include this only once */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */ }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */ } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */ }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */ } }
+/* line 89, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222222;
+  z-index: 1000; }
+
+/* line 98, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+#loader-wrapper .loader-section.section-left {
+  left: 0; }
+
+/* line 102, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+#loader-wrapper .loader-section.section-right {
+  right: 0; }
+
+/* Loaded */
+/* line 108, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-100%);
+  /* IE 9 */
+  transform: translateX(-100%);
+  /* Firefox 16+, IE 10+, Opera */ }
+
+/* line 114, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(100%);
+  /* IE 9 */
+  transform: translateX(100%);
+  /* Firefox 16+, IE 10+, Opera */ }
+
+/* line 120, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* line 126, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.loaded #loader-wrapper {
+  visibility: hidden; }
+
+/* line 130, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+/* line 137, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.loaded #loader-wrapper {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out; }
+
+/* line 147, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_loader.scss */
+.no-js #loader-wrapper {
+  display: none; }

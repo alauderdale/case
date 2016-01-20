@@ -11,6 +11,9 @@ $(document).ready(function(){
  //   });
 
 
+    Pace.on('done', function() {
+        $('body').addClass('loaded');
+    });
 
 
 
