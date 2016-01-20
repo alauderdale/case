@@ -7,6 +7,10 @@
 		line-height:3.7rem;
 		margin-bottom:$baseline/2;
 		font-size: 1.9rem;
+		@include breakpoint(sm) {
+      font-size: 1.6rem;
+      line-height:2.8rem;
+    }
 		&.signature{
 			color:rgba(0,0,0,.5);
 			font-size: 1.5rem;

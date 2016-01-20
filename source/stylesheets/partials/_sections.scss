@@ -30,6 +30,10 @@ section{
     background-color:$primary-color;
     padding:$baseline*2 0 $baseline*8 0;
     @include background-size(cover);
+    @include breakpoint(sm) {
+      padding-top:0;
+      padding-bottom:$baseline*5;
+    }
   }
 }
 
