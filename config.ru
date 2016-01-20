@@ -4,14 +4,6 @@ require "rack"
 require "middleman/rack"
 require "rack/contrib/try_static"
 
-
-protected_middleman = Rack::Auth::Basic.new(Middleman.server) do |username, password|
-  [username, password] == ['user', 'user']
-end
-
-run protected_middleman
-
-
 # Build the static site when the app boots
 `bundle exec middleman build`
 
@@ -22,6 +14,12 @@ use Rack::TryStatic,
     :root => "tmp",
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
+    
+protected_middleman = Rack::Auth::Basic.new(Middleman.server) do |username, password|
+  [username, password] == ['user', 'user']
+end
+
+run protected_middleman
 
 # Serve a 404 page if all else fails
 run lambda { |env|
@@ -34,5 +32,3 @@ run lambda { |env|
     File.open("tmp/404/index.html", File::RDONLY)
   ]
 }
-
-
