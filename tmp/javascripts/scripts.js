@@ -10,6 +10,10 @@ $(document).ready(function(){
  //        }
  //   });
 
+
+
+
+
 	$('.tooltip-up').tooltip({html:true});
 
 	$( "#js-menu-button-open,#js-menu-button-close" ).click(function() {

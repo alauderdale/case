@@ -10,6 +10,13 @@ $(document).ready(function(){
  //        }
  //   });
 
+
+    Pace.on('done', function() {
+        $('body').addClass('loaded');
+    });
+
+
+
 	$('.tooltip-up').tooltip({html:true});
 
 	$( "#js-menu-button-open,#js-menu-button-close" ).click(function() {
