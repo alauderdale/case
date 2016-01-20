@@ -14,12 +14,6 @@ use Rack::TryStatic,
     :root => "tmp",
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
-    
-protected_middleman = Rack::Auth::Basic.new(Middleman.server) do |username, password|
-  [username, password] == ['user', 'user']
-end
-
-run protected_middleman
 
 # Serve a 404 page if all else fails
 run lambda { |env|
