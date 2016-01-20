@@ -24,6 +24,13 @@ section{
   &.blast-off{
     background:white url(../images/blast_off_bg.png) repeat-x center -100px;
   }
+
+  //home
+  &.home-header-section{
+    background-color:$primary-color;
+    padding:$baseline*2 0 $baseline*8 0;
+    @include background-size(cover);
+  }
 }
 
 .parallax{
