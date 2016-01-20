@@ -39,3 +39,27 @@
     background-size: cover;
     -o-background-size: cover;
 }
+
+
+
+.app-bg{
+  background:url(../images/phone_bg.png) center no-repeat; 
+  background-size:70%;
+  #carousel-app{
+      padding:24%;
+    .carousel-control{
+      background:none;
+      width:50%;
+      &.left{
+            cursor: url(../images/gallery-arrow-prev.png) 15 9,e-resize ;
+      }
+      &.right{
+            cursor: url(../images/gallery-arrow-next.png) 15 9,e-resize ;
+      }
+      &:hover{
+        background:none;
+      }
+    }
+  }
+}
+

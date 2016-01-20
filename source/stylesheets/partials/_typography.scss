@@ -374,6 +374,18 @@ p{
     font-size: 1.9rem;
     line-height:3rem;
   }
+  a{
+    padding-bottom:4px;
+    border-bottom:1px solid black;
+    color:black;
+    font-weight:700;
+    @include transition-duration(.2s);
+    &:hover, &:focus, &:active{
+      text-decoration:none;
+      color:$secondary-color;
+      border-bottom-color:$secondary-color;
+    }
+  }
 }
 
 .small{
@@ -445,6 +457,13 @@ ol{
       @include breakpoint(sm) {
         font-size: 1.9rem;
         line-height:3rem;
+      }
+    }
+    &.darkol{
+      li{
+        &:before{
+          color:black;
+        }
       }
     }
   }

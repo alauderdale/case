@@ -3,7 +3,7 @@
 	background:$primary-color url(../images/Confidential.png) no-repeat center 200px;
 	display:inline-block;
 	padding:$baseline 0;
-	margin:$baseline*2 0;
+	margin:$baseline*2 0 0 0;
 	box-shadow: 0px 2px 84px 0px rgba(0,0,0,0.27);
 	hr{
 		border-color:rgba(255,255,255,.5);
@@ -32,6 +32,7 @@
 			-moz-hyphens: auto;
 			-webkit-hyphens: auto;
 			hyphens: auto;
+			border-bottom-color:white!important;
 		}
 	}
 	h5{
@@ -44,3 +45,14 @@
 	}
 }
 
+
+img.do-not{
+	    position: relative;
+    top: -238px;
+    right: 20px;
+    margin-bottom: -138px;
+      @include breakpoint(md) {
+        top: -168px;
+        width:200px;
+      }
+}
