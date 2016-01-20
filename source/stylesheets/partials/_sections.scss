@@ -1,0 +1,27 @@
+//sections
+section{
+  padding:$baseline*2 0;
+
+  &.white-bg{
+    background:#fff;
+    border-bottom:1px solid $medium-gray-color;
+    border-top:1px solid $medium-gray-color;
+  }
+  &.inverse-section{
+  	@extend %white_text;
+    p{
+      color:rgba(255,255,255,.8)!important;
+    }
+    background-color:$primary-color;
+    a{
+      color:white;
+      border-color:white;
+    }
+  }
+}
+
+.parallax{
+  min-height: 500px;
+  background: transparent;
+}
+
