@@ -436,7 +436,7 @@ blockquote {
     /* line 396, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_typography.scss */
     blockquote {
       font-size: 2.9rem;
-      line-height: 3rem; } }
+      line-height: 3.5rem; } }
 
 /* line 417, /Users/alexlauderdale/Documents/town/source/stylesheets/partials/_typography.scss */
 ul {
@@ -845,19 +845,23 @@ label {
 .brand-doc {
   background: #0063B5 url(../images/Confidential.png) no-repeat center 200px;
   display: inline-block;
-  padding: 28px 0;
+  padding: 28px 56px;
   margin: 56px 0 0 0;
   box-shadow: 0px 2px 84px 0px rgba(0, 0, 0, 0.27); }
-  /* line 8, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  @media (max-width: 767px) {
+    /* line 1, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    .brand-doc {
+      padding: 28px 28px; } }
+  /* line 11, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
   .brand-doc hr {
     border-color: rgba(255, 255, 255, 0.5); }
-  /* line 11, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  /* line 14, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
   .brand-doc p, .brand-doc li {
     font-family: "open_sansregular", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     line-height: 2.5rem;
     color: rgba(255, 255, 255, 0.9) !important; }
-    /* line 17, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    /* line 20, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
     .brand-doc p a, .brand-doc li a {
       color: white;
       font-size: 1.5rem;
@@ -875,7 +879,7 @@ label {
       -webkit-hyphens: auto;
       hyphens: auto;
       border-bottom-color: white !important; }
-  /* line 38, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+  /* line 41, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
   .brand-doc h5 {
     font-family: "open_sansbold", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
@@ -884,14 +888,14 @@ label {
     text-transform: none;
     letter-spacing: 0; }
 
-/* line 49, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+/* line 52, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
 img.do-not {
   position: relative;
   top: -238px;
   right: 20px;
   margin-bottom: -138px; }
   @media (max-width: 992px) {
-    /* line 49, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
+    /* line 52, /Users/alexlauderdale/Documents/town/source/stylesheets/elements/_home.scss */
     img.do-not {
       top: -168px;
       width: 200px; } }
